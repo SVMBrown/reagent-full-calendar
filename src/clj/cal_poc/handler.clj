@@ -17,6 +17,11 @@
    [:meta {:charset "utf-8"}]
    [:meta {:name "viewport"
            :content "width=device-width, initial-scale=1"}]
+   (include-js "/fullcalendar-3.9.0/lib/jquery.min.js")
+   (include-js "/fullcalendar-3.9.0/lib/jquery-ui.min.js")
+   (include-js "/fullcalendar-3.9.0/lib/moment.min.js")
+   (include-js "/fullcalendar-3.9.0/fullcalendar.min.js")
+   (include-css "/fullcalendar-3.9.0/fullcalendar.min.css")
    (include-css (if (env :dev) "/css/site.css" "/css/site.min.css"))])
 
 (defn loading-page []
